@@ -24,6 +24,8 @@ composer require openai-php/client
 Then, interact with OpenAI's API:
 
 ```php
+use OpenAi;
+
 $client = OpenAI::client('YOUR_API_KEY');
 
 $result = $client->completions()->create([
